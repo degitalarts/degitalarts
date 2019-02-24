@@ -46,6 +46,7 @@
   }
   .watching-you-l {
     list-style:none;
+    padding:0;
   }
   @include media-query($medium-screen) {
     text-align: right;
