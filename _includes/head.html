@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }} | b{% endif %}</title>
-  <link rel="icon" type="img/svg+xml" href="{{ site.url }}/img/degitalarts.svg">
+
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <!-- CSS files -->
@@ -16,10 +16,11 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
 
   <!-- Icons -->
-  <!-- 16x16 -->
-  <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
-  <!-- 32x32 -->
-  <link rel="shortcut icon" href="{{ site.url }}/favicon.png">
+  <link rel="icon" type="img/svg+xml" href="{{ site.url }}/img/degitalarts.svg">
+  <!-- 16x16
+  <link rel="shortcut icon" href="{{ site.url }}/favicon.ico"> -->
+  <!-- 32x32 
+  <link rel="shortcut icon" href="{{ site.url }}/favicon.png"> -->
   
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
   <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script> -->
