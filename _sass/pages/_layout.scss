@@ -44,6 +44,9 @@
     font-size: 90%;
     display: block;
   }
+  .watching-you-l {
+    list-style:none;
+  }
   @include media-query($medium-screen) {
     text-align: right;
     margin: 0 auto;
