@@ -46,7 +46,6 @@
   }
   .watching-you-l {
     list-style:none;
-    
     @include media-query($small-screen) {
     padding:0;
   }
