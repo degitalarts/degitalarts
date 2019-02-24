@@ -3,7 +3,7 @@
 <div class="cover-card table-cell table-middle">
   <img src="{{ site.url }}/img/degital.svg" alt="" class="avatar">
   <a href="{{ site.url }}" class="author_name hidden">{{ author.name }}</a>
-  <ul class="test-ul">
+  <ul class="watching-you-l">
       <li id="my_os"></li>
       <li id="my_browser"></li>
       <li id="my_res"></li>
@@ -12,17 +12,6 @@
   </ul>
   <span class="author_bio mbm">{{ author.comment }}</span>
 
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="{{ site.url }}">about</a>
-      </li>
-      {% for page in site.pages %} {% if page.title %}
-      <li class="nav-item">
-        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
-      </li>
-      {% endif %} {% endfor %}
-    </ul>
-  </nav>
+  
   {% include social-links.html %}
 </div>
