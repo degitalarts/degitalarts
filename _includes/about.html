@@ -27,19 +27,31 @@
                             전시일정 :
                         </dt>
                         <dd>
-                            3월 20일 이후 경에 1주일~2주일 정도
+                            2019.3.23 Sat - 4.7 Sun
                         </dd>
                         <dt>
                             전시장소 :
                         </dt>
                         <dd>
-                            세운상가쪽
+                            다시세운광장 하부 세운홀 (종로구 청계천로 159)
                         </dd>
                         <dt>
                             SNS :
                         </dt>
                         <dd>
-                            페북, 인스타
+                            <div class="social-links">
+                              <ul>
+                                {% if author.email %}
+                                  <li>
+                                  <script>gen_mail_to_link('{{ author.email }}', 'Hello from website');</script>
+                                  </li>
+                                    {% endif %}
+                                    
+                                    {% if author.facebook %}<li><a href="http://facebook.com/{{ author.facebook }}" class="social-link-item" target="_blank"><i class="fa fa-fw fa-facebook"></i></a></li>{% endif %}
+                                    {% if author.twitter %}<li><a href="http://twitter.com/{{ author.twitter }}" class="social-link-item" target="_blank"><i class="fa fa-fw fa-twitter"></i></a></li>{% endif %}
+                                    {% if author.instagram %}<li><a href="http://instagram.com/{{ author.instagram }}" class="social-link-item" target="_blank"><i class="fa fa-fw fa-instagram"></i></a></li>{% endif %}
+                                </ul>
+                            </div>
                         </dd>
                         <dt>
                             참여작가 :
@@ -56,6 +68,18 @@
 
                 <p>
                     <dl>
+                        <dt>
+                            웹사이트 :
+                        </dt>
+                        <dd>
+                            정혜윤
+                        </dd>
+                        <dt>
+                            그래픽 :
+                        </dt>
+                        <dd>
+                            Samuli Saarinen
+                        </dd>
                         <dt>
                             주최주관 :
                         </dt>
