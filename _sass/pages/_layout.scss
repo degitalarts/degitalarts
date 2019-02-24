@@ -64,10 +64,10 @@
       display: inline-block;
       margin-left: 1em;
       a.social-link-item {
-        color: $secondary;
+        color: $000100;
         &:hover,
         &:focus {
-          color: lighten($secondary, 14%);
+          color: #08b59b;
         }
       }
     }
