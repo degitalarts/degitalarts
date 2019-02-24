@@ -11,7 +11,18 @@
       <li id="my_cookies"></li>
   </ul>
   <span class="author_bio mbm">{{ author.comment }}</span>
-
  
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="{{ site.url }}">about</a>
+      </li>
+      {% for page in site.pages %} {% if page.title %}
+      <li class="nav-item">
+        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+      </li>
+      {% endif %} {% endfor %}
+    </ul>
+  </nav>
   {% include social-links.html %}
 </div>
