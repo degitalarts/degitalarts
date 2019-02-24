@@ -6,7 +6,7 @@
 title: degital fair
 email: 
 description: 세운상가 2019년 3월 20일부터 한다아아아
-url:  https://jeonghye-youn.github.io/degital
+url:  https://degitalarts.github.io/
 
 
 #
@@ -33,14 +33,14 @@ kramdown:
 ####################################
 #
 owner:
-  name: Degital
+  name: degitalarts
   avatar: leonids-logo.png
   job: "tech"
-  comment: "디지털페어"
+  comment: "디지털"
   email:
   disqus-shortname:
   twitter: #username
-  facebook: joenghye.youn
+  facebook: degitalarts
   google:
     plus: #username
     analytics:
