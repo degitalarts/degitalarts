@@ -1,0 +1,29 @@
+{% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
+
+<div class="cover-card table-cell table-middle">
+  <a href="{{ site.url }}" class="author_name hidden">{{ author.name }}</a>
+  <span class="author_bio mbm">{{ author.comment }}</span>
+
+  <h1>왓칭유</h1>
+    <ul class="test-ul">
+      <li id="my_os">test</li>
+      <li id="my_browser"></li>
+      <li id="my_res"></li>
+      <li id="my_ip"></li>
+	  <li id="my_cookies"></li>
+  </ul>
+
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="{{ site.url }}">about</a>
+      </li>
+      {% for page in site.pages %} {% if page.title %}
+      <li class="nav-item">
+        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+      </li>
+      {% endif %} {% endfor %}
+    </ul>
+  </nav>
+  {% include social-links.html %}
+</div>

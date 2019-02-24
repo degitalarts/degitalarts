@@ -1,0 +1,85 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }} | b{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="{{ site.url }}/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+  <!-- 32x32 -->
+  <link rel="shortcut icon" href="{{ site.url }}/favicon.png">
+  
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script> -->
+  <script type="text/javascript" src="{{site.baseurl}}/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="{{site.baseurl}}/js/jquery.cookie-1.4.1.js"></script>
+  <script type="text/javascript" src="{{site.baseurl}}/js/osinfo.js"></script>
+  <script type="text/javascript" src="{{site.baseurl}}/js/browser-detect.js"></script>
+  <script type="text/javascript" src="https://ip.fatc.club"></script>
+  
+
+  <script type="text/javascript">
+
+    var my_os = OSInfoDev();
+    var my_browser = BrowserDetect.browser;
+    var my_res = screen.width + 'x' + screen.height;
+    var my_ip = ip();
+    
+    console.log("OS : " + OSInfoDev() + ", Browser : " + BrowserDetect.browser);
+    console.log('현재 모니터 해상도 : ' + screen.width + 'x' + screen.height);
+    console.log( ip() );
+    
+
+    if (navigator.geolocation) {
+
+      navigator.geolocation.getCurrentPosition (function(pos) {
+
+        console.log('위치:' + pos.coords.latitude + ', ' + pos.coords.longitude);
+      });
+      
+    } else {
+      alert("이 브라우저에서는 Geolocation이 지원되지 않습니다.")
+    }
+    
+    
+
+    
+    function appendCookie() {
+      var my_path = $.cookie('my_path');
+      
+
+        my_path += "->" + window.location.pathname;
+        
+      $.cookie('my_path', my_path, { expires: 60, path: '/' });
+    }
+
+    
+
+    
+    function openTest() {
+      var w = window.open('http://www.naver.com'); 
+      w.focus(); 
+
+      localStorage.setItem('allCookies', w.document.cookie); 
+
+
+      
+      var x = localStorage.getItem("allCookies");
+
+      console.log('openTest');
+      console.log(JSON.stringify(x));
+    }
+
+  </script>
+</head>
