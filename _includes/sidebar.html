@@ -1,8 +1,9 @@
 {% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
 
 <div class="cover-card table-cell table-middle">
-  <img src="{{ site.url }}/img/degital.svg" alt="degitalarts logo" class="avatar">
-  <a href="{{ site.url }}" class="author_name hidden">{{ author.name }}</a>
+  
+  <a href="{{ site.url }}" class="author_name hidden"><img src="{{ site.url }}/img/degital.svg" alt="degitalarts logo" class="avatar">
+  {{ author.name }}</a>
   <ul class="watching-you-l">
       <li id="my_os"></li>
       <li id="my_browser"></li>
