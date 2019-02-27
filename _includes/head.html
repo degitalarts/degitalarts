@@ -51,18 +51,10 @@
     }
 
     function couponClose(){
-    if($("input[name='chkbox']").is(":checked") ==true){
-        setCookie("close","Y",1);
+        $("#layer-popup").hide();
     }
-    $("#layer-popup").hide();
-    }
+    
     $(document).ready(function(){
-        cookiedata = document.cookie;
-        if(cookiedata.indexOf("close=Y")<0){
-            $("#layer-popup").show();
-        }else{
-            $("#llayer-popup").hide();
-        }
         $("#close").click(function(){
             couponClose();
         });
