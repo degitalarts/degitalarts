@@ -82,7 +82,7 @@
   top: 2%;
   right: auto;
   z-index: 9999;
-  @include media-query($small-screen) {
+  @include media-query($medium-screen) {
     position: fixed;
     top: 90%;
     width:100%;
@@ -91,7 +91,7 @@
   }
   ul li {
   list-style:none;
-    @include media-query($small-screen) {
+    @include media-query($medium-screen) {
       float:left;
     }
   }
