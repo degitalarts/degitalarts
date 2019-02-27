@@ -44,7 +44,7 @@
     font-size: 90%;
     display: block;
   }
-  .watching-you-l ul {
+  .watching-you-l {
     list-style:none;
     padding: 0;
     @include media-query($medium-screen) {
