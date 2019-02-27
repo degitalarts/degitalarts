@@ -159,6 +159,10 @@
 }
 dl {
   display: flex;
+  flex-flow: row; 
+  flex-wrap: wrap;
+  width: 100%; 
+  overflow: visible;
 }
 dt {
   flex: 0 0 16%;
