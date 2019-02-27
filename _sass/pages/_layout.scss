@@ -76,7 +76,7 @@
   top: 90%;
   width:100%;
   height: 10%;
-  float:left;
+  
   z-index: 9999;
   background-color: #dedede;
   @include media-query($medium-screen) {
@@ -87,8 +87,9 @@
   }
   ul li {
     list-style:none;
+    float:left;
     @include media-query($medium-screen) {
-      
+      float:none;
     }
   }
 }
