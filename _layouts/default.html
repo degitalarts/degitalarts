@@ -4,10 +4,16 @@
 {% include head.html %}
 
 <body>
-  <div class="layerPop" id="21628" style="position: absolute; top: 0px; left: 0; width: 100%; height: 100vh; border: 0px; margin-left: 0px; display: block; background-color: rgba(255, 255, 255, 0.7); z-index: 10000;">
+  <div class="layerPop" id="layer-popup" style="position: absolute; top: 0px; left: 0; width: 100%; height: 100vh; border: 0px; margin-left: 0px; display: block; background-color: rgba(255, 255, 255, 0.9); z-index: 10000;">
   <a href="#none" onclick="redirectPopupPage('/promotion/haruPlanDetail.do?planNumber=36244&amp;SKM_CD=100101')" style="width: 100%; height: 70vh; display:block; padding: 20% 42% 0 42%;" >
-    <img src="{{ site.url }}/img/Cookie.png" usemap="#image-map" width="100%" height="auto" align="center" />
+    <img src="{{ site.url }}/img/Cookie.png" width="100%" height="auto" align="center" usemap="#image-map" />
   </a>
+  <div class="close">
+        <form method="post" action="" name="pop_form">
+            <span id="check"><input type="checkbox" value="checkbox" name="chkbox" id="chkday"/><label for="chkday">오늘 하루동안 보지 않기</label></span>
+            <span id="close">Close</span>
+        </form>
+  </div>
   <p style="color: #000100; text-align: center; vertical-align: baseline; word-break: keep-all; padding-bottom: 10%">
      이 사이트는 쿠키를 잔뜩 저장합니다.</br>
      하지만 쓰이지는 않습니다.</br>
@@ -18,7 +24,7 @@
   </p>
   <map name="image-map">
     <map name="image-map">
-      <area target="_self" alt="agree" title="agree" href="" coords="722,1788,935,1816,1339,1626,1729,1297,1833,970,1751,584,1573,325,1295,132,1001,20,632,44,309,267,106,559,2,746,60,1076,119,1250,288,1305,268,1479,362,1606,436,1718,592,1803" shape="poly">
+      <area target="_self" alt="agree" title="agree" href="" coords="722,1788,935,1816,1339,1626,1729,1297,1833,970,1751,584,1573,325,1295,132,1001,20,632,44,309,267,106,559,2,746,60,1076,119,1250,288,1305,268,1479,362,1606,436,1718,592,1803" shape="poly" onclick="setCookie(image-map);closeLayerPopup(image-map)">
     </map>
     <area shape="rect" coords="138,222,248,249" href="#none" onclick="setCookie(21628);closeLayerPopup(21628)" title="쿠키허용하기">
     <area shape="rect" coords="220,3,247,30" href="#none" onclick="closeLayerPopup(21628)" title="닫기">
