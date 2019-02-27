@@ -46,12 +46,12 @@
   }
   .watching-you-l {
     list-style:none;
-      @include media-query($small-screen) {
-        padding:0;
-      }
-      @include media-query($medium-screen) {
-        padding-right:2%;
-      }
+    @include media-query($small-screen) {
+      padding:0;
+    }
+    @include media-query($medium-screen) {
+      padding-right:2%;
+    }
   }
   @include media-query($medium-screen) {
     text-align: right;
@@ -84,7 +84,7 @@
     background-color: #dedede;
   }
   ul li {
-  list-style:none;
+    list-style:none;
     @include media-query($medium-screen) {
       float:left;
     }
