@@ -108,6 +108,9 @@
           color: #08b59b;
         }
       }
+      a.set-white {
+        color: #dedede;
+      }
     }
   }
 }
@@ -145,9 +148,8 @@
     }
   }
 }
-.set-white {
-  color: #dedede;
-  border-top: .0625rem solid rgba(255,255,255,1);
+.hr-white {
+  border-top: .0625rem solid #dedede;
 }
 .hidden {
   display: none;
