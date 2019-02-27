@@ -81,14 +81,15 @@
   position: absolute;
   top: 2%;
   right: auto;
+  background-color: #dedede;
   @include media-query($small-screen) {
     position: fixed;
-    bottom: 0;
+    top: 90%;
     height: 10%;
   }
   @include media-query($medium-screen) {
     position: fixed;
-    bottom: 0;
+    top: 90%;
     height: 10%;
   }
   ul li {
