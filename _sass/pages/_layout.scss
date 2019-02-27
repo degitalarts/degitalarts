@@ -89,19 +89,9 @@
     height: 10%;
     background-color: #dedede;
   }
-  @include media-query($medium-screen) {
-    position: fixed;
-    top: 90%;
-    width:100%;
-    height: 10%;
-    background-color: #dedede;
-  }
   ul li {
   list-style:none;
     @include media-query($small-screen) {
-      float:left;
-    }
-    @include media-query($medium-screen) {
       float:left;
     }
   }
