@@ -91,6 +91,15 @@
     bottom: 0;
     height: 10%;
   }
+  ul li {
+  list-style:none;
+    @include media-query($small-screen) {
+      float:left;
+    }
+    @include media-query($medium-screen) {
+      float:left;
+    }
+  }
 }
 .social-links {
   margin-top: 0.5em;
