@@ -44,13 +44,11 @@
     font-size: 90%;
     display: block;
   }
-  .watching-you-l {
+  .watching-you-l ul {
     list-style:none;
-    @include media-query($small-screen) {
-      padding-right:2%;
-    }
+    padding: 0;
     @include media-query($medium-screen) {
-      padding:0;
+      padding-right:2%;
     }
   }
   @include media-query($medium-screen) {
