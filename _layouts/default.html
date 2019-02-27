@@ -4,7 +4,7 @@
 {% include head.html %}
 
 <body>
-  <div class="layer-cover" id="layer-popup" style="position: absolute; top: 0px; left: 0; width: 100%; height: 100vh; border: 0px; margin-left: 0px; display: block; background-color: #dedede; z-index: 10000;">
+  <div class="layer-cover" id="layer-popup">
     <a href="#none" onclick="redirectPopupPage('/promotion/haruPlanDetail.do?planNumber=36244&amp;SKM_CD=100101')" style="width: 100%; height: 70vh; display:block; padding: 16% 42% 0 42%; cursor: default;" class="close">
       <img src="{{ site.url }}/img/Cookie.png" id="close" width="100%" height="auto" align="center" usemap="#image-map" style="cursor: pointer;" />
     </a>
@@ -37,6 +37,38 @@
         {% include sidebar.html %}
       </div>
     </div>
+  </div>
+
+  <div class="cart">
+    <ul>
+      <li>
+        <span>작가명</span>
+        <span>작품명</span>
+        <form>
+          <fieldset>
+            <input type="checkbox" name="">
+          </fieldset>
+        </form> 
+      </li>
+      <li>
+        <span>작가명</span>
+        <span>작품명</span>
+        <form>
+          <fieldset>
+            <input type="checkbox" name="">
+          </fieldset>
+        </form> 
+      </li>
+      <li>
+        <span>작가명</span>
+        <span>작품명</span>
+        <form>
+          <fieldset>
+            <input type="checkbox" name="">
+          </fieldset>
+        </form> 
+      </li>
+    </ul>
   </div>
   
 <div id="embed-api-auth-container"></div>
