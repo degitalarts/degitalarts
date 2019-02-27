@@ -81,6 +81,16 @@
   position: absolute;
   top: 2%;
   right: auto;
+  @include media-query($small-screen) {
+    position: fixed;
+    bottom: 0;
+    height: 10%;
+  }
+  @include media-query($medium-screen) {
+    position: fixed;
+    bottom: 0;
+    height: 10%;
+  }
 }
 .social-links {
   margin-top: 0.5em;
