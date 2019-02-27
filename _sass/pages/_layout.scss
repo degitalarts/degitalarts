@@ -81,7 +81,7 @@
   position: absolute;
   top: 2%;
   right: auto;
-
+  z-index: 9999;
   @include media-query($small-screen) {
     position: fixed;
     top: 90%;
